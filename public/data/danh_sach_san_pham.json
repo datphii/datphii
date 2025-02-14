@@ -1,0 +1,458 @@
+[
+    {
+        "Tên hàng": "LE LABO Santal 33",
+        "Thương hiệu": "LE LABO",
+        "Giá bán": "650.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Montblanc Signature",
+        "Thương hiệu": "Montblanc",
+        "Giá bán": "2.500.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Gucci Guilty Black Pour Homme",
+        "Thương hiệu": "Gucci",
+        "Giá bán": "2.800.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Paco Rabanne Invictus",
+        "Thương hiệu": "Paco Rabanne",
+        "Giá bán": "2.200.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Calvin Klein CK Be",
+        "Thương hiệu": "Calvin Klein",
+        "Giá bán": "1.000.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Narciso Rodriguez Pourdee",
+        "Thương hiệu": "Narciso Rodriguez",
+        "Giá bán": "2.900.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Versace Bright Crystal Absolu",
+        "Thương hiệu": "Versace",
+        "Giá bán": "2.200.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Bvlgari AQVA Pour Homme",
+        "Thương hiệu": "Bvlgari",
+        "Giá bán": "2.300.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Dior Miss Dior Rose N'Roses",
+        "Thương hiệu": "Dior",
+        "Giá bán": "3.500.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Jean Paul So Scandal",
+        "Thương hiệu": "Jean Paul",
+        "Giá bán": "2.800.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Mancera Mancera Cedrat Boise",
+        "Thương hiệu": "Mancera",
+        "Giá bán": "3.000.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Dolce & Gabbana K",
+        "Thương hiệu": "Dolce & Gabbana",
+        "Giá bán": "2.500.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Carolina Herrera Very Good Girl",
+        "Thương hiệu": "Carolina Herrera",
+        "Giá bán": "2.800.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Mugler Angel",
+        "Thương hiệu": "Mugler",
+        "Giá bán": "4.500.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Dolce & Gabbana Q - S",
+        "Thương hiệu": "Dolce&Gabbana",
+        "Giá bán": "2.550.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Bvlgari BLV Pour Homme - S",
+        "Thương hiệu": "Bvlgari",
+        "Giá bán": "3.180.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Gucci Flora Gorgeous Jasmine - S",
+        "Thương hiệu": "Gucci",
+        "Giá bán": "3.230.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Bvlgari Omnia Amethyste - S",
+        "Thương hiệu": "Bvlgari",
+        "Giá bán": "3.100.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Narciso Rodriguez Bleu noir",
+        "Thương hiệu": "Narciso Rodriguez",
+        "Giá bán": "2.330.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Narciso Rodriguez For Her Forever",
+        "Thương hiệu": "Narciso Rodriguez",
+        "Giá bán": "2.760.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Burberry The Beat - S",
+        "Thương hiệu": "BURBERRY",
+        "Giá bán": "2.620.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Gucci Guilty Absolute Pour Femme - S",
+        "Thương hiệu": "Gucci",
+        "Giá bán": "2.530.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Gucci Flora Gorgeous Gardenia - S",
+        "Thương hiệu": "Gucci",
+        "Giá bán": "3.230.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "CHANEL JERSEY - S",
+        "Thương hiệu": "CHANEL",
+        "Giá bán": "6.200.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "CHANEL Les Beiges Illuminating Oil - S",
+        "Thương hiệu": "CHANEL",
+        "Giá bán": "1.150.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "CHANEL Paris – Édimbourg - S",
+        "Thương hiệu": "CHANEL",
+        "Giá bán": "2.650.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "CHANEL CHANCE - S",
+        "Thương hiệu": "CHANEL",
+        "Giá bán": "2.800.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "BURBERRY My Burberry - S",
+        "Thương hiệu": "BURBERRY",
+        "Giá bán": "3.190.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Armani Sì Passione Eclat - S",
+        "Thương hiệu": "Armani Beauty",
+        "Giá bán": "3.201.000,0",
+        "Tồn kho": 2.0
+    },
+    {
+        "Tên hàng": "Bvlgari Rose Goldea Blossom Delight - S",
+        "Thương hiệu": "Bvlgari",
+        "Giá bán": "3.240.000,0",
+        "Tồn kho": 1.0
+    },
+    {
+        "Tên hàng": "Givenchy Gentleman Eau de Toilette Intense",
+        "Thương hiệu": "Givenchy",
+        "Giá bán": "250.000,0",
+        "Tồn kho": 1.0
+    },
+    {
+        "Tên hàng": "Dior Sauvage",
+        "Thương hiệu": "Dior",
+        "Giá bán": "400.000,0",
+        "Tồn kho": 1.0
+    },
+    {
+        "Tên hàng": "CHANEL BLEU DE CHANEL",
+        "Thương hiệu": "CHANEL",
+        "Giá bán": "400.000,0",
+        "Tồn kho": 1.0
+    },
+    {
+        "Tên hàng": "Carolina Herrera 212 Men Sexy",
+        "Thương hiệu": "Carolina Herrera",
+        "Giá bán": "280.000,0",
+        "Tồn kho": 1.0
+    },
+    {
+        "Tên hàng": "Burberry Her",
+        "Thương hiệu": "Bumble and bumble",
+        "Giá bán": "300.000,0",
+        "Tồn kho": 1.0
+    },
+    {
+        "Tên hàng": "Dolce & Gabbana L'Imperatrice",
+        "Thương hiệu": "Dolce&Gabbana",
+        "Giá bán": "1.700.000,0",
+        "Tồn kho": 4.0
+    },
+    {
+        "Tên hàng": "Narciso Rodriguez For Her Pure Musc",
+        "Thương hiệu": "Narciso Rodriguez",
+        "Giá bán": "2.900.000,0",
+        "Tồn kho": 4.0
+    },
+    {
+        "Tên hàng": "Mancera So Blue",
+        "Thương hiệu": "Mancera",
+        "Giá bán": "3.000.000,0",
+        "Tồn kho": 4.0
+    },
+    {
+        "Tên hàng": "Mancera Hindu Kush",
+        "Thương hiệu": "Mancera",
+        "Giá bán": "3.000.000,0",
+        "Tồn kho": 4.0
+    },
+    {
+        "Tên hàng": "Burberry Weekend for Women",
+        "Thương hiệu": "BURBERRY",
+        "Giá bán": "1.900.000,0",
+        "Tồn kho": 4.0
+    },
+    {
+        "Tên hàng": "Mancera Cedrat Boise",
+        "Thương hiệu": "Mancera",
+        "Giá bán": "300.000,0",
+        "Tồn kho": 4.0
+    },
+    {
+        "Tên hàng": "Dolce & Gabbana Light Blue Pour Homme Intense",
+        "Thương hiệu": "Dolce&Gabbana",
+        "Giá bán": "250.000,0",
+        "Tồn kho": 4.0
+    },
+    {
+        "Tên hàng": "Dior J'adore",
+        "Thương hiệu": "Dior",
+        "Giá bán": "3.400.000,0",
+        "Tồn kho": 4.0
+    },
+    {
+        "Tên hàng": "Marc Jacobs Daisy Dream Forever",
+        "Thương hiệu": "Marc Jacobs Fragrances",
+        "Giá bán": "1.800.000,0",
+        "Tồn kho": 4.0
+    },
+    {
+        "Tên hàng": "Marc Jacobs Daisy Dream Forever",
+        "Thương hiệu": "Marc Jacobs Fragrances",
+        "Giá bán": "300.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Lancome Miracle",
+        "Thương hiệu": "Lancôme",
+        "Giá bán": "2.600.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Giorgio Armani Acqua Di Gioia",
+        "Thương hiệu": "Armani Beauty",
+        "Giá bán": "2.600.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Dolce & Gabbana Light Blue Pour Homme",
+        "Thương hiệu": "Dolce&Gabbana",
+        "Giá bán": "2.200.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Dolce & Gabbana Light Blue Eau Intense Pour Homme",
+        "Thương hiệu": "Dolce&Gabbana",
+        "Giá bán": "2.300.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Marc Jacobs Perfect",
+        "Thương hiệu": "Marc Jacobs Fragrances",
+        "Giá bán": "2.500.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Narciso Rodriguez Poudree",
+        "Thương hiệu": "Narciso Rodriguez",
+        "Giá bán": "2.900.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Gucci Bloom For Her",
+        "Thương hiệu": "Gucci",
+        "Giá bán": "3.300.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Gucci Guilty Pour Femme",
+        "Thương hiệu": "Gucci",
+        "Giá bán": "2.800.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "YSL Y",
+        "Thương hiệu": "Yves Saint Laurent",
+        "Giá bán": "3.200.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Montblanc Explorer",
+        "Thương hiệu": "Montblanc",
+        "Giá bán": "2.300.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Davidoff Cool Water Man",
+        "Thương hiệu": "DAVIDOFF",
+        "Giá bán": "1.500.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Lacoste L.12.12 Blanc Pure",
+        "Thương hiệu": "Lacoste",
+        "Giá bán": "2.200.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Versace Dylan Blue Pour Homme",
+        "Thương hiệu": "Versace",
+        "Giá bán": "2.200.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Versace Eros For Men",
+        "Thương hiệu": "Versace",
+        "Giá bán": "2.300.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Giorgio Armani Acqua di Giò Pour Homme",
+        "Thương hiệu": "Armani Beauty",
+        "Giá bán": "2.300.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Giorgio Armani Acqua di Giò Pour Homme - S",
+        "Thương hiệu": "Armani Beauty",
+        "Giá bán": "2.398.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Burberry Hero",
+        "Thương hiệu": "BURBERRY",
+        "Giá bán": "2.800.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Burberry Hero - S",
+        "Thương hiệu": "BURBERRY",
+        "Giá bán": "3.760.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Nautica Voyage",
+        "Thương hiệu": "NAUTICA",
+        "Giá bán": "1.000.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Daisy Dream Forever",
+        "Thương hiệu": "Marc Jacobs Fragrances",
+        "Giá bán": "1.800.000,0",
+        "Tồn kho": 3.0
+    },
+    {
+        "Tên hàng": "Marc Jacobs Daisy Dream Forever",
+        "Thương hiệu": "Marc Jacobs Fragrances",
+        "Giá bán": "1.800.000,0",
+        "Tồn kho": 6.0
+    },
+    {
+        "Tên hàng": "Dolce & Gabbana The One",
+        "Thương hiệu": "Dolce&Gabbana",
+        "Giá bán": "2.400.000,0",
+        "Tồn kho": 6.0
+    },
+    {
+        "Tên hàng": "Le Labo Another 13",
+        "Thương hiệu": "LE LABO",
+        "Giá bán": 650000,
+        "Tồn kho": 6.0
+    },
+    {
+        "Tên hàng": "Le Labo Another 13",
+        "Thương hiệu": "LE LABO",
+        "Giá bán": "5.500.000,0",
+        "Tồn kho": 6.0
+    },
+    {
+        "Tên hàng": "Tom Ford Ombré Leather",
+        "Thương hiệu": "TOM FORD",
+        "Giá bán": "4.500.000,0",
+        "Tồn kho": 6.0
+    },
+    {
+        "Tên hàng": "Juliette Has A Gun Not A Perfume",
+        "Thương hiệu": "Juliette Has a Gun",
+        "Giá bán": 300000,
+        "Tồn kho": 6.0
+    },
+    {
+        "Tên hàng": NaN,
+        "Thương hiệu": NaN,
+        "Giá bán": NaN,
+        "Tồn kho": NaN
+    },
+    {
+        "Tên hàng": NaN,
+        "Thương hiệu": NaN,
+        "Giá bán": NaN,
+        "Tồn kho": NaN
+    },
+    {
+        "Tên hàng": NaN,
+        "Thương hiệu": NaN,
+        "Giá bán": NaN,
+        "Tồn kho": NaN
+    },
+    {
+        "Tên hàng": NaN,
+        "Thương hiệu": NaN,
+        "Giá bán": NaN,
+        "Tồn kho": NaN
+    },
+    {
+        "Tên hàng": NaN,
+        "Thương hiệu": NaN,
+        "Giá bán": NaN,
+        "Tồn kho": NaN
+    }
+]
