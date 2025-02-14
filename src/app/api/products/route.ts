@@ -8,7 +8,8 @@ type Product = {
   "Tồn kho": number
 }
 
-// Thêm cấu hình CORS
+// Thêm /* eslint-disable */ để tắt cảnh báo ESLint
+/* eslint-disable @typescript-eslint/no-unused-vars */
 export async function OPTIONS(_request: Request) {
   return new NextResponse(null, {
     headers: {
@@ -18,6 +19,7 @@ export async function OPTIONS(_request: Request) {
     },
   })
 }
+/* eslint-enable @typescript-eslint/no-unused-vars */
 
 export async function GET(request: Request) {
   // Thêm CORS header cho GET request

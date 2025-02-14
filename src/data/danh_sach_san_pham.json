@@ -424,5 +424,35 @@
         "Thương hiệu": "Juliette Has a Gun",
         "Giá bán": 300000,
         "Tồn kho": 6.0
+    },
+    {
+        "Tên hàng": NaN,
+        "Thương hiệu": NaN,
+        "Giá bán": NaN,
+        "Tồn kho": NaN
+    },
+    {
+        "Tên hàng": NaN,
+        "Thương hiệu": NaN,
+        "Giá bán": NaN,
+        "Tồn kho": NaN
+    },
+    {
+        "Tên hàng": NaN,
+        "Thương hiệu": NaN,
+        "Giá bán": NaN,
+        "Tồn kho": NaN
+    },
+    {
+        "Tên hàng": NaN,
+        "Thương hiệu": NaN,
+        "Giá bán": NaN,
+        "Tồn kho": NaN
+    },
+    {
+        "Tên hàng": NaN,
+        "Thương hiệu": NaN,
+        "Giá bán": NaN,
+        "Tồn kho": NaN
     }
 ]
