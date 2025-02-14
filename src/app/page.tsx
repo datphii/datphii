@@ -8,12 +8,17 @@ type SearchResult = {
   "Giá bán": string | number
   "Tồn kho": number
   message?: string
-  error?: string
+} 
+
+// Thêm type riêng cho error response
+type ErrorResponse = {
+  error: string
 }
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('')
-  const [result, setResult] = useState<SearchResult | null>(null)
+  // Sửa kiểu dữ liệu của state result
+  const [result, setResult] = useState<SearchResult | ErrorResponse | null>(null)
   const [loading, setLoading] = useState(false)
 
   const searchProduct = async () => {
@@ -54,7 +59,7 @@ export default function Home() {
 
         {result && (
           <div className="bg-white shadow rounded-lg p-6">
-            {result.error ? (
+            {'error' in result ? (
               <p className="text-red-500">{result.error}</p>
             ) : (
               <div className="space-y-2">
