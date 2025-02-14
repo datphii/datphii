@@ -12,9 +12,9 @@ type Product = {
 export async function OPTIONS(request: Request) {
   return new NextResponse(null, {
     headers: {
-      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': 'https://your-domain.vercel.app',
       'Access-Control-Allow-Methods': 'GET, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      'Access-Control-Allow-Headers': 'Content-Type',
     },
   })
 }
@@ -22,7 +22,7 @@ export async function OPTIONS(request: Request) {
 export async function GET(request: Request) {
   // Thêm CORS header cho GET request
   const headers = {
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': 'https://your-domain.vercel.app',
     'Content-Type': 'application/json',
   }
 
