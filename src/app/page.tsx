@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 type SearchResult = {
   "Tên hàng": string
@@ -38,7 +39,15 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-2xl mx-auto p-8">
-        <h1 className="text-2xl font-bold mb-6 text-gray-800">Tìm Kiếm Nước Hoa</h1>
+        <div className="flex justify-between items-center mb-6">
+          <h1 className="text-2xl font-bold text-gray-800">Tìm Kiếm Nước Hoa</h1>
+          <Link 
+            href="/products" 
+            className="text-blue-500 hover:text-blue-600"
+          >
+            Xem tất cả sản phẩm
+          </Link>
+        </div>
         
         <div className="flex gap-2 mb-6">
           <input
@@ -61,6 +70,18 @@ export default function Home() {
           <div className="bg-white shadow rounded-lg p-6">
             {'error' in result ? (
               <p className="text-red-500">{result.error}</p>
+            ) : Array.isArray(result) ? (
+              <div className="space-y-4">
+                <p className="font-medium">Tìm thấy {result.length} sản phẩm:</p>
+                {result.map((product, index) => (
+                  <div key={index} className="border-b pb-4 last:border-0">
+                    <h2 className="text-xl font-semibold text-gray-800">{product["Tên hàng"]}</h2>
+                    <p className="text-gray-600">Thương hiệu: {product["Thương hiệu"]}</p>
+                    <p className="text-gray-600">Giá bán: {product["Giá bán"]}</p>
+                    <p className="text-gray-600">Tồn kho: {product["Tồn kho"]}</p>
+                  </div>
+                ))}
+              </div>
             ) : (
               <div className="space-y-2">
                 <h2 className="text-xl font-semibold text-gray-800">{result["Tên hàng"]}</h2>

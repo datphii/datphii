@@ -33,28 +33,20 @@ export async function GET(request: Request) {
     const name = searchParams.get('name')
 
     if (name) {
-      const product = (products as Product[]).find(
-        (p: Product) => p["Tên hàng"]?.toLowerCase().includes(name.toLowerCase())
+      // Thay đổi từ find sang filter để lấy tất cả sản phẩm phù hợp
+      const matchedProducts = (products as Product[]).filter(
+        (p: Product) => p["Tên hàng"]?.toLowerCase().includes(name.toLowerCase()) ||
+                       p["Thương hiệu"]?.toLowerCase().includes(name.toLowerCase())
       )
 
-      if (!product) {
+      if (matchedProducts.length === 0) {
         return NextResponse.json(
           { error: 'Không tìm thấy sản phẩm' },
           { status: 404, headers }
         )
       }
 
-      if (product["Tồn kho"] === 0) {
-        return NextResponse.json(
-          { 
-            ...product,
-            message: 'Sản phẩm đã hết hàng'
-          },
-          { status: 200, headers }
-        )
-      }
-
-      return NextResponse.json(product, { headers })
+      return NextResponse.json(matchedProducts, { headers })
     }
 
     // Lọc bỏ các sản phẩm có dữ liệu null/undefined
