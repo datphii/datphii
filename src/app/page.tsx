@@ -2,9 +2,18 @@
 
 import { useState } from 'react'
 
+type SearchResult = {
+  "Tên hàng": string
+  "Thương hiệu": string
+  "Giá bán": string | number
+  "Tồn kho": number
+  message?: string
+  error?: string
+}
+
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('')
-  const [result, setResult] = useState<any>(null)
+  const [result, setResult] = useState<SearchResult | null>(null)
   const [loading, setLoading] = useState(false)
 
   const searchProduct = async () => {

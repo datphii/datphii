@@ -9,7 +9,7 @@ type Product = {
 }
 
 // Thêm cấu hình CORS
-export async function OPTIONS(request: Request) {
+export async function OPTIONS(_request: Request) {
   return new NextResponse(null, {
     headers: {
       'Access-Control-Allow-Origin': 'https://your-domain.vercel.app',
