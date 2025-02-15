@@ -15,6 +15,13 @@ type Category = {
   brands: string[]
 }
 
+type PriceRange = {
+  id: string
+  name: string
+  min: number
+  max: number | null
+}
+
 const categories: Category[] = [
   {
     name: "Nước hoa Nam",
@@ -30,11 +37,19 @@ const categories: Category[] = [
   }
 ]
 
+const priceRanges: PriceRange[] = [
+  { id: 'all', name: 'Tất cả mức giá', min: 0, max: null },
+  { id: 'under-500', name: 'Dưới 500.000đ', min: 0, max: 500000 },
+  { id: '500-2000', name: '500.000đ - 2.000.000đ', min: 500000, max: 2000000 },
+  { id: 'over-2000', name: 'Trên 2.000.000đ', min: 2000000, max: null }
+]
+
 export default function ProductList() {
   const [products, setProducts] = useState<Product[]>([])
   const [loading, setLoading] = useState(true)
   const [selectedCategory, setSelectedCategory] = useState('')
   const [brandFilter, setBrandFilter] = useState('')
+  const [priceFilter, setPriceFilter] = useState('all')
   const [currentPage, setCurrentPage] = useState(1)
   const productsPerPage = 12
 
@@ -54,20 +69,42 @@ export default function ProductList() {
     fetchProducts()
   }, [])
 
+  // Chuyển đổi giá từ string sang number
+  const parsePrice = (price: string | number): number => {
+    if (typeof price === 'number') return price
+    return Number(price.replace(/[^\d]/g, ''))
+  }
+
   // Lấy danh sách thương hiệu dựa trên category
   const availableBrands = selectedCategory
     ? categories.find(c => c.name === selectedCategory)?.brands || []
     : [...new Set(products.map(p => p["Thương hiệu"]))].sort()
 
-  // Lọc sản phẩm theo category và brand
+  // Lọc sản phẩm theo category, brand và giá
   const filteredProducts = products.filter(product => {
+    // Lọc theo category
     if (selectedCategory) {
       const categoryBrands = categories.find(c => c.name === selectedCategory)?.brands || []
       if (!categoryBrands.includes(product["Thương hiệu"])) return false
     }
-    if (brandFilter) {
-      return product["Thương hiệu"] === brandFilter
+
+    // Lọc theo brand
+    if (brandFilter && product["Thương hiệu"] !== brandFilter) {
+      return false
     }
+
+    // Lọc theo giá
+    if (priceFilter !== 'all') {
+      const price = parsePrice(product["Giá bán"])
+      const range = priceRanges.find(r => r.id === priceFilter)
+      if (range) {
+        if (range.max === null) {
+          return price >= range.min
+        }
+        return price >= range.min && price <= range.max
+      }
+    }
+
     return true
   })
 
@@ -85,6 +122,20 @@ export default function ProductList() {
     return price.toLocaleString('vi-VN')
   }
 
+  // Thêm hàm để copy JSON
+  const copyProductsToClipboard = () => {
+    const productsData = filteredProducts.map(product => ({
+      name: product["Tên hàng"],
+      brand: product["Thương hiệu"],
+      price: product["Giá bán"],
+      stock: product["Tồn kho"]
+    }))
+    
+    navigator.clipboard.writeText(JSON.stringify(productsData, null, 2))
+      .then(() => alert('Đã sao chép dữ liệu sản phẩm vào clipboard!'))
+      .catch(err => console.error('Lỗi khi sao chép:', err))
+  }
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
@@ -100,9 +151,17 @@ export default function ProductList() {
         <div className="mb-8">
           <div className="flex justify-between items-center mb-6">
             <h1 className="text-3xl font-bold text-gray-800">Danh Sách Nước Hoa</h1>
-            <Link href="/" className="text-blue-500 hover:text-blue-600">
-              Quay lại trang chủ
-            </Link>
+            <div className="flex gap-4">
+              <button
+                onClick={copyProductsToClipboard}
+                className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+              >
+                Copy JSON
+              </button>
+              <Link href="/" className="text-blue-500 hover:text-blue-600">
+                Quay lại trang chủ
+              </Link>
+            </div>
           </div>
           
           <div className="flex flex-wrap gap-4">
@@ -139,6 +198,22 @@ export default function ProductList() {
               ))}
             </select>
 
+            {/* Price Range Filter */}
+            <select
+              value={priceFilter}
+              onChange={(e) => {
+                setPriceFilter(e.target.value)
+                setCurrentPage(1)
+              }}
+              className="p-2 border rounded-md min-w-[200px]"
+            >
+              {priceRanges.map(range => (
+                <option key={range.id} value={range.id}>
+                  {range.name}
+                </option>
+              ))}
+            </select>
+
             {/* Products count */}
             <span className="ml-auto text-gray-600">
               Hiển thị {filteredProducts.length} sản phẩm
@@ -154,6 +229,22 @@ export default function ProductList() {
               <p className="text-gray-600">Thương hiệu: {product["Thương hiệu"]}</p>
               <p className="text-gray-600">Giá bán: {formatPrice(product["Giá bán"])} VNĐ</p>
               <p className="text-gray-600">Tồn kho: {product["Tồn kho"]}</p>
+              <button
+                onClick={() => {
+                  const productData = {
+                    name: product["Tên hàng"],
+                    brand: product["Thương hiệu"],
+                    price: product["Giá bán"],
+                    stock: product["Tồn kho"]
+                  }
+                  navigator.clipboard.writeText(JSON.stringify(productData, null, 2))
+                    .then(() => alert('Đã sao chép thông tin sản phẩm vào clipboard!'))
+                    .catch(err => console.error('Lỗi khi sao chép:', err))
+                }}
+                className="mt-4 w-full px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition-colors text-sm"
+              >
+                Copy JSON
+              </button>
             </div>
           ))}
         </div>
