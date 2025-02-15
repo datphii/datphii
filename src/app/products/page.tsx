@@ -127,12 +127,25 @@ export default function ProductList() {
     const productsData = filteredProducts.map(product => ({
       name: product["Tên hàng"],
       brand: product["Thương hiệu"],
-      price: product["Giá bán"],
+      price: parsePrice(product["Giá bán"]),
       stock: product["Tồn kho"]
     }))
     
     navigator.clipboard.writeText(JSON.stringify(productsData, null, 2))
       .then(() => alert('Đã sao chép dữ liệu sản phẩm vào clipboard!'))
+      .catch(err => console.error('Lỗi khi sao chép:', err))
+  }
+
+  // Cập nhật phần copy JSON cho từng sản phẩm
+  const copyProductToClipboard = (product: Product) => {
+    const productData = {
+      name: product["Tên hàng"],
+      brand: product["Thương hiệu"],
+      price: parsePrice(product["Giá bán"]),
+      stock: product["Tồn kho"]
+    }
+    navigator.clipboard.writeText(JSON.stringify(productData, null, 2))
+      .then(() => alert('Đã sao chép thông tin sản phẩm vào clipboard!'))
       .catch(err => console.error('Lỗi khi sao chép:', err))
   }
 
@@ -230,17 +243,7 @@ export default function ProductList() {
               <p className="text-gray-600">Giá bán: {formatPrice(product["Giá bán"])} VNĐ</p>
               <p className="text-gray-600">Tồn kho: {product["Tồn kho"]}</p>
               <button
-                onClick={() => {
-                  const productData = {
-                    name: product["Tên hàng"],
-                    brand: product["Thương hiệu"],
-                    price: product["Giá bán"],
-                    stock: product["Tồn kho"]
-                  }
-                  navigator.clipboard.writeText(JSON.stringify(productData, null, 2))
-                    .then(() => alert('Đã sao chép thông tin sản phẩm vào clipboard!'))
-                    .catch(err => console.error('Lỗi khi sao chép:', err))
-                }}
+                onClick={() => copyProductToClipboard(product)}
                 className="mt-4 w-full px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition-colors text-sm"
               >
                 Copy JSON
