@@ -2,10 +2,11 @@ import { NextResponse } from 'next/server'
 import products from '@/data/danh_sach_san_pham.json'
 
 type Product = {
-  "Tên hàng": string
-  "Thương hiệu": string 
-  "Giá bán": string | number
-  "Tồn kho": number
+  "Product Name": string
+  "Brand": string 
+  "Price": string | number
+  "Stock": number
+  "Description": string
 }
 
 type Category = {
@@ -71,8 +72,8 @@ export async function GET(request: Request) {
     if (name) {
       filteredProducts = filteredProducts.filter(
         (p: Product) => 
-          p["Tên hàng"]?.toLowerCase().includes(name.toLowerCase()) ||
-          p["Thương hiệu"]?.toLowerCase().includes(name.toLowerCase())
+          p["Product Name"]?.toLowerCase().includes(name.toLowerCase()) ||
+          p["Brand"]?.toLowerCase().includes(name.toLowerCase())
       )
     }
 
@@ -80,26 +81,26 @@ export async function GET(request: Request) {
     if (category) {
       const categoryBrands = categories.find(c => c.name === category)?.brands || []
       filteredProducts = filteredProducts.filter(
-        (p: Product) => categoryBrands.includes(p["Thương hiệu"])
+        (p: Product) => categoryBrands.includes(p["Brand"])
       )
     }
 
     // Lọc theo thương hiệu
     if (brand) {
       filteredProducts = filteredProducts.filter(
-        (p: Product) => p["Thương hiệu"] === brand
+        (p: Product) => p["Brand"] === brand
       )
     }
 
     // Lọc theo khoảng giá
     if (minPrice) {
       filteredProducts = filteredProducts.filter(
-        (p: Product) => parsePrice(p["Giá bán"]) >= Number(minPrice)
+        (p: Product) => parsePrice(p["Price"]) >= Number(minPrice)
       )
     }
     if (maxPrice) {
       filteredProducts = filteredProducts.filter(
-        (p: Product) => parsePrice(p["Giá bán"]) <= Number(maxPrice)
+        (p: Product) => parsePrice(p["Price"]) <= Number(maxPrice)
       )
     }
 
@@ -107,23 +108,23 @@ export async function GET(request: Request) {
     if (sortBy) {
       switch (sortBy) {
         case 'price-asc':
-          filteredProducts.sort((a, b) => parsePrice(a["Giá bán"]) - parsePrice(b["Giá bán"]))
+          filteredProducts.sort((a, b) => parsePrice(a["Price"]) - parsePrice(b["Price"]))
           break
         case 'price-desc':
-          filteredProducts.sort((a, b) => parsePrice(b["Giá bán"]) - parsePrice(a["Giá bán"]))
+          filteredProducts.sort((a, b) => parsePrice(b["Price"]) - parsePrice(a["Price"]))
           break
         case 'name-asc':
-          filteredProducts.sort((a, b) => a["Tên hàng"].localeCompare(b["Tên hàng"]))
+          filteredProducts.sort((a, b) => a["Product Name"].localeCompare(b["Product Name"]))
           break
         case 'name-desc':
-          filteredProducts.sort((a, b) => b["Tên hàng"].localeCompare(a["Tên hàng"]))
+          filteredProducts.sort((a, b) => b["Product Name"].localeCompare(a["Product Name"]))
           break
       }
     }
 
     // Lọc bỏ sản phẩm không hợp lệ
     filteredProducts = filteredProducts.filter(
-      (p: Product) => p["Tên hàng"] && p["Thương hiệu"] && p["Giá bán"] && p["Tồn kho"] != null
+      (p: Product) => p["Product Name"] && p["Brand"] && p["Price"] && p["Stock"] != null
     )
 
     if (filteredProducts.length === 0) {

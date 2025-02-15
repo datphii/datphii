@@ -4,10 +4,11 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 type SearchResult = {
-  "Tên hàng": string
-  "Thương hiệu": string
-  "Giá bán": string | number
-  "Tồn kho": number
+  "Product Name": string
+  "Brand": string
+  "Price": string | number
+  "Stock": number
+  "Description": string
   message?: string
 } 
 
@@ -205,10 +206,11 @@ export default function Home() {
                   <div key={index} className="border-b pb-4 last:border-0">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-xl font-semibold text-gray-800">{product["Tên hàng"]}</h2>
-                        <p className="text-gray-600">Thương hiệu: {product["Thương hiệu"]}</p>
-                        <p className="text-gray-600">Giá bán: {product["Giá bán"]}</p>
-                        <p className="text-gray-600">Tồn kho: {product["Tồn kho"]}</p>
+                        <h2 className="text-xl font-semibold text-gray-800">{product["Product Name"]}</h2>
+                        <p className="text-gray-600">Thương hiệu: {product["Brand"]}</p>
+                        <p className="text-gray-600">Giá bán: {product["Price"]}</p>
+                        <p className="text-gray-600">Tồn kho: {product["Stock"]}</p>
+                        <p className="text-gray-600 mt-2 text-sm italic">{product["Description"]}</p>
                       </div>
                       <button
                         onClick={() => copyProductData(product)}
@@ -225,10 +227,11 @@ export default function Home() {
               <div className="space-y-2">
                 <div className="flex justify-between items-start">
                   <div>
-                    <h2 className="text-xl font-semibold text-gray-800">{result["Tên hàng"]}</h2>
-                    <p className="text-gray-600">Thương hiệu: {result["Thương hiệu"]}</p>
-                    <p className="text-gray-600">Giá bán: {result["Giá bán"]}</p>
-                    <p className="text-gray-600">Tồn kho: {result["Tồn kho"]}</p>
+                    <h2 className="text-xl font-semibold text-gray-800">{result["Product Name"]}</h2>
+                    <p className="text-gray-600">Thương hiệu: {result["Brand"]}</p>
+                    <p className="text-gray-600">Giá bán: {result["Price"]}</p>
+                    <p className="text-gray-600">Tồn kho: {result["Stock"]}</p>
+                    <p className="text-gray-600 mt-2 text-sm italic">{result["Description"]}</p>
                     {result.message && (
                       <p className="text-yellow-600 mt-2">{result.message}</p>
                     )}

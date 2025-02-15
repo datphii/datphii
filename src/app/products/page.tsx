@@ -4,10 +4,11 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 type Product = {
-  "Tên hàng": string
-  "Thương hiệu": string
-  "Giá bán": string | number
-  "Tồn kho": number
+  "Product Name": string
+  "Brand": string
+  "Price": string | number
+  "Stock": number
+  "Description": string
 }
 
 type Category = {
@@ -78,24 +79,24 @@ export default function ProductList() {
   // Lấy danh sách thương hiệu dựa trên category
   const availableBrands = selectedCategory
     ? categories.find(c => c.name === selectedCategory)?.brands || []
-    : [...new Set(products.map(p => p["Thương hiệu"]))].sort()
+    : [...new Set(products.map(p => p["Brand"]))].sort()
 
   // Lọc sản phẩm theo category, brand và giá
   const filteredProducts = products.filter(product => {
     // Lọc theo category
     if (selectedCategory) {
       const categoryBrands = categories.find(c => c.name === selectedCategory)?.brands || []
-      if (!categoryBrands.includes(product["Thương hiệu"])) return false
+      if (!categoryBrands.includes(product["Brand"])) return false
     }
 
     // Lọc theo brand
-    if (brandFilter && product["Thương hiệu"] !== brandFilter) {
+    if (brandFilter && product["Brand"] !== brandFilter) {
       return false
     }
 
     // Lọc theo giá
     if (priceFilter !== 'all') {
-      const price = parsePrice(product["Giá bán"])
+      const price = parsePrice(product["Price"])
       const range = priceRanges.find(r => r.id === priceFilter)
       if (range) {
         if (range.max === null) {
@@ -125,10 +126,11 @@ export default function ProductList() {
   // Thêm hàm để copy JSON
   const copyProductsToClipboard = () => {
     const productsData = filteredProducts.map(product => ({
-      name: product["Tên hàng"],
-      brand: product["Thương hiệu"],
-      price: parsePrice(product["Giá bán"]),
-      stock: product["Tồn kho"]
+      name: product["Product Name"],
+      brand: product["Brand"],
+      price: parsePrice(product["Price"]),
+      stock: product["Stock"],
+      description: product["Description"]
     }))
     
     navigator.clipboard.writeText(JSON.stringify(productsData, null, 2))
@@ -139,10 +141,11 @@ export default function ProductList() {
   // Cập nhật phần copy JSON cho từng sản phẩm
   const copyProductToClipboard = (product: Product) => {
     const productData = {
-      name: product["Tên hàng"],
-      brand: product["Thương hiệu"],
-      price: parsePrice(product["Giá bán"]),
-      stock: product["Tồn kho"]
+      name: product["Product Name"],
+      brand: product["Brand"],
+      price: parsePrice(product["Price"]),
+      stock: product["Stock"],
+      description: product["Description"]
     }
     navigator.clipboard.writeText(JSON.stringify(productData, null, 2))
       .then(() => alert('Đã sao chép thông tin sản phẩm vào clipboard!'))
@@ -238,10 +241,11 @@ export default function ProductList() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {currentProducts.map((product, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-              <h2 className="text-xl font-semibold text-gray-800 mb-2">{product["Tên hàng"]}</h2>
-              <p className="text-gray-600">Thương hiệu: {product["Thương hiệu"]}</p>
-              <p className="text-gray-600">Giá bán: {formatPrice(product["Giá bán"])} VNĐ</p>
-              <p className="text-gray-600">Tồn kho: {product["Tồn kho"]}</p>
+              <h2 className="text-xl font-semibold text-gray-800 mb-2">{product["Product Name"]}</h2>
+              <p className="text-gray-600">Thương hiệu: {product["Brand"]}</p>
+              <p className="text-gray-600">Giá bán: {formatPrice(product["Price"])} VNĐ</p>
+              <p className="text-gray-600">Tồn kho: {product["Stock"]}</p>
+              <p className="text-gray-600 mt-2 text-sm italic">{product["Description"]}</p>
               <button
                 onClick={() => copyProductToClipboard(product)}
                 className="mt-4 w-full px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition-colors text-sm"

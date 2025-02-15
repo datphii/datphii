@@ -1,428 +1,338 @@
 [
     {
-        "Tên hàng": "LE LABO Santal 33",
-        "Thương hiệu": "LE LABO",
-        "Giá bán": "650.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "LE LABO Santal 33",
+        "Brand": "LE LABO",
+        "Price": "650.000",
+        "Stock": 2,
+        "Description": "Một mùi hương ấm áp và cay nồng với các nốt hương của bạch đậu khấu, hoa diên vĩ, violet và gỗ đàn hương."
     },
     {
-        "Tên hàng": "Montblanc Signature",
-        "Thương hiệu": "Montblanc",
-        "Giá bán": "2.500.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Montblanc Signature",
+        "Brand": "Montblanc",
+        "Price": "2.500.000",
+        "Stock": 2,
+        "Description": "Một hương thơm nhẹ nhàng và nữ tính với hương vani, quýt và hoa mộc lan."
     },
     {
-        "Tên hàng": "Gucci Guilty Black Pour Homme",
-        "Thương hiệu": "Gucci",
-        "Giá bán": "2.800.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Gucci Guilty Black Pour Homme",
+        "Brand": "Gucci",
+        "Price": "2.800.000",
+        "Stock": 2,
+        "Description": "Một hương thơm nam tính táo bạo với các nốt hương của hoa oải hương, rau mùi và gỗ tuyết tùng."
     },
     {
-        "Tên hàng": "Paco Rabanne Invictus",
-        "Thương hiệu": "Paco Rabanne",
-        "Giá bán": "2.200.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Paco Rabanne Invictus",
+        "Brand": "Paco Rabanne",
+        "Price": "2.200.000",
+        "Stock": 2,
+        "Description": "Một mùi hương tươi mát và mạnh mẽ với hương biển, bưởi và gỗ guaiac."
     },
     {
-        "Tên hàng": "Calvin Klein CK Be",
-        "Thương hiệu": "Calvin Klein",
-        "Giá bán": "1.000.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Calvin Klein CK Be",
+        "Brand": "Calvin Klein",
+        "Price": "1.000.000",
+        "Stock": 2,
+        "Description": "Một hương thơm unisex với cam bergamot, oải hương và xạ hương mang lại cảm giác tươi mới và độc đáo."
     },
     {
-        "Tên hàng": "Narciso Rodriguez Pourdee",
-        "Thương hiệu": "Narciso Rodriguez",
-        "Giá bán": "2.900.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Narciso Rodriguez Pourdee",
+        "Brand": "Narciso Rodriguez",
+        "Price": "2.900.000",
+        "Stock": 2,
+        "Description": "Một hương thơm quyến rũ và thanh lịch với xạ hương, hoa hồng và hoắc hương."
     },
     {
-        "Tên hàng": "Versace Bright Crystal Absolu",
-        "Thương hiệu": "Versace",
-        "Giá bán": "2.200.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Versace Bright Crystal Absolu",
+        "Brand": "Versace",
+        "Price": "2.200.000",
+        "Stock": 2,
+        "Description": "Một mùi hương hoa cỏ và trái cây với lựu, mẫu đơn và xạ hương."
     },
     {
-        "Tên hàng": "Bvlgari AQVA Pour Homme",
-        "Thương hiệu": "Bvlgari",
-        "Giá bán": "2.300.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Bvlgari AQVA Pour Homme",
+        "Brand": "Bvlgari",
+        "Price": "2.300.000",
+        "Stock": 2,
+        "Description": "Một hương thơm biển cả tươi mát với quýt, hổ phách khoáng chất và hoa cam."
     },
     {
-        "Tên hàng": "Dior Miss Dior Rose N'Roses",
-        "Thương hiệu": "Dior",
-        "Giá bán": "3.500.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Dior Miss Dior Rose N'Roses",
+        "Brand": "Dior",
+        "Price": "3.500.000",
+        "Stock": 2,
+        "Description": "Một hương hoa tươi sáng và rạng rỡ với hoa hồng centifolia và xạ hương trắng."
     },
     {
-        "Tên hàng": "Jean Paul So Scandal",
-        "Thương hiệu": "Jean Paul",
-        "Giá bán": "2.800.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Jean Paul So Scandal",
+        "Brand": "Jean Paul",
+        "Price": "2.800.000",
+        "Stock": 2,
+        "Description": "Một hương thơm mạnh mẽ và quyến rũ với hoa nhài, hoa cam và huệ tây."
     },
     {
-        "Tên hàng": "Mancera Mancera Cedrat Boise",
-        "Thương hiệu": "Mancera",
-        "Giá bán": "3.000.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Mancera Cedrat Boise",
+        "Brand": "Mancera",
+        "Price": "3.000.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cam chanh và gỗ với nho đen, da thuộc và vani."
     },
     {
-        "Tên hàng": "Dolce & Gabbana K",
-        "Thương hiệu": "Dolce & Gabbana",
-        "Giá bán": "2.500.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Dolce & Gabbana K",
+        "Brand": "Dolce & Gabbana",
+        "Price": "2.500.000",
+        "Stock": 2,
+        "Description": "Một hương thơm tinh tế với cam chanh, bách xù và gỗ tuyết tùng."
     },
     {
-        "Tên hàng": "Carolina Herrera Very Good Girl",
-        "Thương hiệu": "Carolina Herrera",
-        "Giá bán": "2.800.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Carolina Herrera Very Good Girl",
+        "Brand": "Carolina Herrera",
+        "Price": "2.800.000",
+        "Stock": 2,
+        "Description": "Một hương thơm đầy mê hoặc với nho đỏ, vải và vani."
     },
     {
-        "Tên hàng": "Mugler Angel",
-        "Thương hiệu": "Mugler",
-        "Giá bán": "4.500.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Mugler Angel",
+        "Brand": "Mugler",
+        "Price": "4.500.000",
+        "Stock": 2,
+        "Description": "Một hương thơm đặc trưng với các nốt hương của sô-cô-la, praline và hoắc hương."
     },
     {
-        "Tên hàng": "Dolce & Gabbana Q - S",
-        "Thương hiệu": "Dolce&Gabbana",
-        "Giá bán": "2.550.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Dolce & Gabbana Q",
+        "Brand": "Dolce&Gabbana",
+        "Price": "2.550.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Bvlgari BLV Pour Homme - S",
-        "Thương hiệu": "Bvlgari",
-        "Giá bán": "3.180.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Bvlgari BLV Pour Homme",
+        "Brand": "Bvlgari",
+        "Price": "3.180.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Gucci Flora Gorgeous Jasmine - S",
-        "Thương hiệu": "Gucci",
-        "Giá bán": "3.230.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Gucci Flora Gorgeous Jasmine",
+        "Brand": "Gucci",
+        "Price": "3.230.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Bvlgari Omnia Amethyste - S",
-        "Thương hiệu": "Bvlgari",
-        "Giá bán": "3.100.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Bvlgari Omnia Amethyste",
+        "Brand": "Bvlgari",
+        "Price": "3.100.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Narciso Rodriguez Bleu noir",
-        "Thương hiệu": "Narciso Rodriguez",
-        "Giá bán": "2.330.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Narciso Rodriguez Bleu noir",
+        "Brand": "Narciso Rodriguez",
+        "Price": "2.330.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Narciso Rodriguez For Her Forever",
-        "Thương hiệu": "Narciso Rodriguez",
-        "Giá bán": "2.760.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Narciso Rodriguez For Her Forever",
+        "Brand": "Narciso Rodriguez",
+        "Price": "2.760.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Burberry The Beat - S",
-        "Thương hiệu": "BURBERRY",
-        "Giá bán": "2.620.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Burberry The Beat",
+        "Brand": "BURBERRY",
+        "Price": "2.620.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Gucci Guilty Absolute Pour Femme - S",
-        "Thương hiệu": "Gucci",
-        "Giá bán": "2.530.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Gucci Guilty Absolute Pour Femme",
+        "Brand": "Gucci",
+        "Price": "2.530.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Gucci Flora Gorgeous Gardenia - S",
-        "Thương hiệu": "Gucci",
-        "Giá bán": "3.230.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Gucci Flora Gorgeous Gardenia",
+        "Brand": "Gucci",
+        "Price": "3.230.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "CHANEL JERSEY - S",
-        "Thương hiệu": "CHANEL",
-        "Giá bán": "6.200.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "CHANEL JERSEY",
+        "Brand": "CHANEL",
+        "Price": "6.200.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "CHANEL Les Beiges Illuminating Oil - S",
-        "Thương hiệu": "CHANEL",
-        "Giá bán": "1.150.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "CHANEL Les Beiges Illuminating Oil",
+        "Brand": "CHANEL",
+        "Price": "1.150.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "CHANEL Paris – Édimbourg - S",
-        "Thương hiệu": "CHANEL",
-        "Giá bán": "2.650.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "CHANEL Paris Édimbourg",
+        "Brand": "CHANEL",
+        "Price": "2.650.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "CHANEL CHANCE - S",
-        "Thương hiệu": "CHANEL",
-        "Giá bán": "2.800.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "CHANEL CHANCE",
+        "Brand": "CHANEL",
+        "Price": "2.800.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "BURBERRY My Burberry - S",
-        "Thương hiệu": "BURBERRY",
-        "Giá bán": "3.190.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "BURBERRY My Burberry",
+        "Brand": "BURBERRY",
+        "Price": "3.190.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Armani Sì Passione Eclat - S",
-        "Thương hiệu": "Armani Beauty",
-        "Giá bán": "3.201.000,0",
-        "Tồn kho": 2.0
+        "Product Name": "Armani Sì Passione Eclat",
+        "Brand": "Armani Beauty",
+        "Price": "3.201.000",
+        "Stock": 2,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Bvlgari Rose Goldea Blossom Delight - S",
-        "Thương hiệu": "Bvlgari",
-        "Giá bán": "3.240.000,0",
-        "Tồn kho": 1.0
+        "Product Name": "Bvlgari Rose Goldea Blossom Delight",
+        "Brand": "Bvlgari",
+        "Price": "3.240.000",
+        "Stock": 1,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Givenchy Gentleman Eau de Toilette Intense",
-        "Thương hiệu": "Givenchy",
-        "Giá bán": "250.000,0",
-        "Tồn kho": 1.0
+        "Product Name": "Givenchy Gentleman Eau de Toilette Intense",
+        "Brand": "Givenchy",
+        "Price": "250.000",
+        "Stock": 1,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Dior Sauvage",
-        "Thương hiệu": "Dior",
-        "Giá bán": "400.000,0",
-        "Tồn kho": 1.0
+        "Product Name": "Dior Sauvage",
+        "Brand": "Dior",
+        "Price": "400.000",
+        "Stock": 1,
+        "Description": "Một hương thơm tươi mát và cay nồng với cam bergamot, tiêu và ambroxan."
     },
     {
-        "Tên hàng": "CHANEL BLEU DE CHANEL",
-        "Thương hiệu": "CHANEL",
-        "Giá bán": "400.000,0",
-        "Tồn kho": 1.0
+        "Product Name": "CHANEL BLEU DE CHANEL",
+        "Brand": "CHANEL",
+        "Price": "400.000",
+        "Stock": 1,
+        "Description": "Một hương thơm sang trọng và tinh tế với cam chanh, gỗ đàn hương và tuyết tùng."
     },
     {
-        "Tên hàng": "Carolina Herrera 212 Men Sexy",
-        "Thương hiệu": "Carolina Herrera",
-        "Giá bán": "280.000,0",
-        "Tồn kho": 1.0
+        "Product Name": "Carolina Herrera 212 Men Sexy",
+        "Brand": "Carolina Herrera",
+        "Price": "280.000",
+        "Stock": 1,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Burberry Her",
-        "Thương hiệu": "Bumble and bumble",
-        "Giá bán": "300.000,0",
-        "Tồn kho": 1.0
+        "Product Name": "Burberry Her",
+        "Brand": "BURBERRY",
+        "Price": "300.000",
+        "Stock": 1,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Dolce & Gabbana L'Imperatrice",
-        "Thương hiệu": "Dolce&Gabbana",
-        "Giá bán": "1.700.000,0",
-        "Tồn kho": 4.0
+        "Product Name": "Dolce & Gabbana L'Imperatrice",
+        "Brand": "Dolce&Gabbana",
+        "Price": "1.700.000",
+        "Stock": 4,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Narciso Rodriguez For Her Pure Musc",
-        "Thương hiệu": "Narciso Rodriguez",
-        "Giá bán": "2.900.000,0",
-        "Tồn kho": 4.0
+        "Product Name": "Narciso Rodriguez For Her Pure Musc",
+        "Brand": "Narciso Rodriguez",
+        "Price": "2.900.000",
+        "Stock": 4,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Mancera So Blue",
-        "Thương hiệu": "Mancera",
-        "Giá bán": "3.000.000,0",
-        "Tồn kho": 4.0
+        "Product Name": "Mancera So Blue",
+        "Brand": "Mancera",
+        "Price": "3.000.000",
+        "Stock": 4,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Mancera Hindu Kush",
-        "Thương hiệu": "Mancera",
-        "Giá bán": "3.000.000,0",
-        "Tồn kho": 4.0
+        "Product Name": "Mancera Hindu Kush",
+        "Brand": "Mancera",
+        "Price": "3.000.000",
+        "Stock": 4,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Burberry Weekend for Women",
-        "Thương hiệu": "BURBERRY",
-        "Giá bán": "1.900.000,0",
-        "Tồn kho": 4.0
+        "Product Name": "Burberry Weekend for Women",
+        "Brand": "BURBERRY",
+        "Price": "1.900.000",
+        "Stock": 4,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Mancera Cedrat Boise",
-        "Thương hiệu": "Mancera",
-        "Giá bán": "300.000,0",
-        "Tồn kho": 4.0
+        "Product Name": "Mancera Cedrat Boise",
+        "Brand": "Mancera",
+        "Price": "300.000",
+        "Stock": 4,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Dolce & Gabbana Light Blue Pour Homme Intense",
-        "Thương hiệu": "Dolce&Gabbana",
-        "Giá bán": "250.000,0",
-        "Tồn kho": 4.0
+        "Product Name": "Dolce & Gabbana Light Blue Pour Homme Intense",
+        "Brand": "Dolce&Gabbana",
+        "Price": "250.000",
+        "Stock": 4,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Dior J'adore",
-        "Thương hiệu": "Dior",
-        "Giá bán": "3.400.000,0",
-        "Tồn kho": 4.0
+        "Product Name": "Dior J'adore",
+        "Brand": "Dior",
+        "Price": "3.400.000",
+        "Stock": 4,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Marc Jacobs Daisy Dream Forever",
-        "Thương hiệu": "Marc Jacobs Fragrances",
-        "Giá bán": "1.800.000,0",
-        "Tồn kho": 4.0
+        "Product Name": "Marc Jacobs Daisy Dream Forever",
+        "Brand": "Marc Jacobs Fragrances",
+        "Price": "1.800.000",
+        "Stock": 6,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Marc Jacobs Daisy Dream Forever",
-        "Thương hiệu": "Marc Jacobs Fragrances",
-        "Giá bán": "300.000,0",
-        "Tồn kho": 3.0
+        "Product Name": "Dolce & Gabbana The One",
+        "Brand": "Dolce&Gabbana",
+        "Price": "2.400.000",
+        "Stock": 6,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Lancome Miracle",
-        "Thương hiệu": "Lancôme",
-        "Giá bán": "2.600.000,0",
-        "Tồn kho": 3.0
+        "Product Name": "Le Labo Another 13",
+        "Brand": "LE LABO",
+        "Price": "5.500.000",
+        "Stock": 6,
+        "Description": "Một hương thơm cao cấp với sự kết hợp độc đáo của các nốt hương."
     },
     {
-        "Tên hàng": "Giorgio Armani Acqua Di Gioia",
-        "Thương hiệu": "Armani Beauty",
-        "Giá bán": "2.600.000,0",
-        "Tồn kho": 3.0
+        "Product Name": "Tom Ford Ombré Leather",
+        "Brand": "TOM FORD",
+        "Price": "4.500.000",
+        "Stock": 6,
+        "Description": "Một hương thơm trầm ấm và mạnh mẽ với bạch đậu khấu, da thuộc và hoắc hương."
     },
     {
-        "Tên hàng": "Dolce & Gabbana Light Blue Pour Homme",
-        "Thương hiệu": "Dolce&Gabbana",
-        "Giá bán": "2.200.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Dolce & Gabbana Light Blue Eau Intense Pour Homme",
-        "Thương hiệu": "Dolce&Gabbana",
-        "Giá bán": "2.300.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Marc Jacobs Perfect",
-        "Thương hiệu": "Marc Jacobs Fragrances",
-        "Giá bán": "2.500.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Narciso Rodriguez Poudree",
-        "Thương hiệu": "Narciso Rodriguez",
-        "Giá bán": "2.900.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Gucci Bloom For Her",
-        "Thương hiệu": "Gucci",
-        "Giá bán": "3.300.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Gucci Guilty Pour Femme",
-        "Thương hiệu": "Gucci",
-        "Giá bán": "2.800.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "YSL Y",
-        "Thương hiệu": "Yves Saint Laurent",
-        "Giá bán": "3.200.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Montblanc Explorer",
-        "Thương hiệu": "Montblanc",
-        "Giá bán": "2.300.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Davidoff Cool Water Man",
-        "Thương hiệu": "DAVIDOFF",
-        "Giá bán": "1.500.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Lacoste L.12.12 Blanc Pure",
-        "Thương hiệu": "Lacoste",
-        "Giá bán": "2.200.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Versace Dylan Blue Pour Homme",
-        "Thương hiệu": "Versace",
-        "Giá bán": "2.200.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Versace Eros For Men",
-        "Thương hiệu": "Versace",
-        "Giá bán": "2.300.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Giorgio Armani Acqua di Giò Pour Homme",
-        "Thương hiệu": "Armani Beauty",
-        "Giá bán": "2.300.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Giorgio Armani Acqua di Giò Pour Homme - S",
-        "Thương hiệu": "Armani Beauty",
-        "Giá bán": "2.398.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Burberry Hero",
-        "Thương hiệu": "BURBERRY",
-        "Giá bán": "2.800.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Burberry Hero - S",
-        "Thương hiệu": "BURBERRY",
-        "Giá bán": "3.760.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Nautica Voyage",
-        "Thương hiệu": "NAUTICA",
-        "Giá bán": "1.000.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Daisy Dream Forever",
-        "Thương hiệu": "Marc Jacobs Fragrances",
-        "Giá bán": "1.800.000,0",
-        "Tồn kho": 3.0
-    },
-    {
-        "Tên hàng": "Marc Jacobs Daisy Dream Forever",
-        "Thương hiệu": "Marc Jacobs Fragrances",
-        "Giá bán": "1.800.000,0",
-        "Tồn kho": 6.0
-    },
-    {
-        "Tên hàng": "Dolce & Gabbana The One",
-        "Thương hiệu": "Dolce&Gabbana",
-        "Giá bán": "2.400.000,0",
-        "Tồn kho": 6.0
-    },
-    {
-        "Tên hàng": "Le Labo Another 13",
-        "Thương hiệu": "LE LABO",
-        "Giá bán": 650000,
-        "Tồn kho": 6.0
-    },
-    {
-        "Tên hàng": "Le Labo Another 13",
-        "Thương hiệu": "LE LABO",
-        "Giá bán": "5.500.000,0",
-        "Tồn kho": 6.0
-    },
-    {
-        "Tên hàng": "Tom Ford Ombré Leather",
-        "Thương hiệu": "TOM FORD",
-        "Giá bán": "4.500.000,0",
-        "Tồn kho": 6.0
-    },
-    {
-        "Tên hàng": "Juliette Has A Gun Not A Perfume",
-        "Thương hiệu": "Juliette Has a Gun",
-        "Giá bán": 300000,
-        "Tồn kho": 6.0
+        "Product Name": "Juliette Has A Gun Not A Perfume",
+        "Brand": "Juliette Has a Gun",
+        "Price": "300.000",
+        "Stock": 6,
+        "Description": "Một hương thơm tối giản và tinh khiết chỉ với nốt hương duy nhất từ Cetalox."
     }
 ]
