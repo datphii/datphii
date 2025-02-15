@@ -120,6 +120,24 @@ export default function Home() {
     setTimeout(() => setToast(null), 3000)
   }
 
+  // Thêm hàm copy tất cả sản phẩm
+  const copyAllProducts = () => {
+    if (!result || 'error' in result) return;
+    
+    const productsData = Array.isArray(result) ? result : [result];
+    const formattedData = productsData.map(product => ({
+      name: product["Product Name"],
+      brand: product["Brand"],
+      price: product["Price"],
+      stock: product["Stock"],
+      description: product["Description"]
+    }));
+    
+    navigator.clipboard.writeText(JSON.stringify(formattedData, null, 2))
+    setToast('Đã sao chép tất cả sản phẩm!')
+    setTimeout(() => setToast(null), 3000)
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-2xl mx-auto p-8">
@@ -201,7 +219,15 @@ export default function Home() {
               <p className="text-red-500">{result.error}</p>
             ) : Array.isArray(result) ? (
               <div className="space-y-4">
-                <p className="font-medium">Tìm thấy {result.length} sản phẩm:</p>
+                <div className="flex justify-between items-center">
+                  <p className="font-medium">Tìm thấy {result.length} sản phẩm:</p>
+                  <button
+                    onClick={copyAllProducts}
+                    className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors text-sm"
+                  >
+                    📋 Copy tất cả
+                  </button>
+                </div>
                 {result.map((product, index) => (
                   <div key={index} className="border-b pb-4 last:border-0">
                     <div className="flex justify-between items-start">
