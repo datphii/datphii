@@ -78,12 +78,6 @@ export default function Home() {
   // Thêm state cho toast
   const [toast, setToast] = useState<string | null>(null)
 
-  // Hàm helper để parse giá
-  const parsePrice = (price: string | number): number => {
-    if (typeof price === 'number') return price
-    return Number(price.replace(/[^\d]/g, ''))
-  }
-
   // Cập nhật hàm searchProduct
   const searchProduct = async () => {
     try {
